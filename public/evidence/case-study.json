@@ -1,0 +1,1902 @@
+{
+  "study": "Pallet / 001",
+  "date": "2026-09-06",
+  "sourceCommit": "228b25f",
+  "sourceImage": "boxes_to_count.jpg",
+  "imageSize": [
+    841,
+    1280
+  ],
+  "conclusion": {
+    "visible": 79,
+    "total": "unresolved",
+    "front": 77,
+    "top": 2
+  },
+  "inventory": {
+    "image_size": [
+      841,
+      1280
+    ],
+    "count": 79,
+    "notes": "Independent manual surface inventory. Letters are image-space groups, NOT physical layers. H1/H2 are principally top-only. No hidden cartons counted.",
+    "groups": {
+      "A": [
+        [
+          241,
+          334
+        ],
+        [
+          319,
+          335
+        ],
+        [
+          405,
+          345
+        ],
+        [
+          475,
+          349
+        ],
+        [
+          544,
+          353
+        ],
+        [
+          612,
+          357
+        ],
+        [
+          682,
+          361
+        ],
+        [
+          752,
+          367
+        ]
+      ],
+      "B": [
+        [
+          240,
+          410
+        ],
+        [
+          305,
+          414
+        ],
+        [
+          383,
+          423
+        ],
+        [
+          486,
+          425
+        ],
+        [
+          572,
+          429
+        ],
+        [
+          656,
+          437
+        ],
+        [
+          746,
+          446
+        ]
+      ],
+      "C": [
+        [
+          211,
+          492
+        ],
+        [
+          286,
+          499
+        ],
+        [
+          365,
+          504
+        ],
+        [
+          461,
+          500
+        ],
+        [
+          530,
+          505
+        ],
+        [
+          603,
+          513
+        ],
+        [
+          678,
+          517
+        ],
+        [
+          753,
+          522
+        ]
+      ],
+      "D": [
+        [
+          207,
+          579
+        ],
+        [
+          282,
+          581
+        ],
+        [
+          365,
+          590
+        ],
+        [
+          476,
+          576
+        ],
+        [
+          561,
+          580
+        ],
+        [
+          654,
+          590
+        ],
+        [
+          744,
+          595
+        ]
+      ],
+      "E": [
+        [
+          164,
+          705
+        ],
+        [
+          291,
+          676
+        ],
+        [
+          392,
+          681
+        ],
+        [
+          462,
+          655
+        ],
+        [
+          516,
+          660
+        ],
+        [
+          595,
+          666
+        ],
+        [
+          664,
+          654
+        ],
+        [
+          731,
+          658
+        ]
+      ],
+      "F": [
+        [
+          147,
+          816
+        ],
+        [
+          261,
+          780
+        ],
+        [
+          347,
+          788
+        ],
+        [
+          434,
+          795
+        ],
+        [
+          515,
+          757
+        ],
+        [
+          594,
+          761
+        ],
+        [
+          660,
+          728
+        ],
+        [
+          734,
+          735
+        ]
+      ],
+      "G": [
+        [
+          157,
+          905
+        ],
+        [
+          263,
+          919
+        ],
+        [
+          383,
+          875
+        ],
+        [
+          483,
+          879
+        ],
+        [
+          585,
+          843
+        ],
+        [
+          665,
+          813
+        ],
+        [
+          738,
+          818
+        ]
+      ],
+      "H": [
+        [
+          583,
+          898
+        ],
+        [
+          672,
+          901
+        ],
+        [
+          755,
+          956
+        ]
+      ],
+      "I": [
+        [
+          169,
+          970
+        ],
+        [
+          247,
+          982
+        ],
+        [
+          327,
+          996
+        ],
+        [
+          412,
+          1003
+        ],
+        [
+          501,
+          1010
+        ],
+        [
+          587,
+          1016
+        ],
+        [
+          675,
+          1024
+        ]
+      ],
+      "J": [
+        [
+          173,
+          1032
+        ],
+        [
+          246,
+          1050
+        ],
+        [
+          327,
+          1064
+        ],
+        [
+          412,
+          1073
+        ],
+        [
+          501,
+          1081
+        ],
+        [
+          583,
+          1090
+        ],
+        [
+          671,
+          1095
+        ],
+        [
+          757,
+          1091
+        ]
+      ],
+      "K": [
+        [
+          178,
+          1106
+        ],
+        [
+          246,
+          1121
+        ],
+        [
+          329,
+          1124
+        ],
+        [
+          409,
+          1134
+        ],
+        [
+          496,
+          1142
+        ],
+        [
+          581,
+          1150
+        ],
+        [
+          672,
+          1160
+        ],
+        [
+          750,
+          1164
+        ]
+      ]
+    }
+  },
+  "audit": {
+    "source_sha256": "3ac1e327fa1429fca0b54e816e84c33c9fcfe49284a9affd810c50243be733c1",
+    "visible_inventory": 79,
+    "glb_verified_carton_counts": {
+      "pallet_reconstruction.glb": 172,
+      "observed_cartons.glb": 79
+    },
+    "front_dominant": 77,
+    "top_dominant": 2,
+    "hypothesis_a_cartons": 172,
+    "hypothesis_b_cartons": 171,
+    "visibility_image_differing_pixels": 0,
+    "visibility_images_identical": true,
+    "observed_ids_without_exact_interior_color_pixels": [],
+    "observed_render_pixel_counts": {
+      "A1": 4799,
+      "A2": 5106,
+      "A3": 4298,
+      "A4": 3752,
+      "A5": 3644,
+      "A6": 3803,
+      "A7": 3874,
+      "A8": 4053,
+      "B1": 4738,
+      "B2": 3580,
+      "B3": 5392,
+      "B4": 5542,
+      "B5": 5367,
+      "B6": 5362,
+      "B7": 5608,
+      "C1": 5305,
+      "C2": 5366,
+      "C3": 5830,
+      "C4": 4420,
+      "C5": 4096,
+      "C6": 4119,
+      "C7": 4122,
+      "C8": 4533,
+      "D1": 5695,
+      "D2": 4908,
+      "D3": 5699,
+      "D4": 5544,
+      "D5": 5466,
+      "D6": 5483,
+      "D7": 6190,
+      "E1": 12320,
+      "E2": 7384,
+      "E3": 7722,
+      "E4": 3170,
+      "E5": 5220,
+      "E6": 5448,
+      "E7": 3929,
+      "E8": 3540,
+      "F1": 12709,
+      "F2": 7425,
+      "F3": 8348,
+      "F4": 7567,
+      "F5": 5496,
+      "F6": 5639,
+      "F7": 3724,
+      "F8": 4169,
+      "G1": 6672,
+      "G2": 10987,
+      "G3": 6455,
+      "G4": 7680,
+      "G5": 6335,
+      "G6": 4705,
+      "G7": 5386,
+      "H1": 4017,
+      "H2": 4314,
+      "H3": 7799,
+      "I1": 3528,
+      "I2": 3986,
+      "I3": 7260,
+      "I4": 8725,
+      "I5": 8836,
+      "I6": 8907,
+      "I7": 9332,
+      "J1": 4489,
+      "J2": 4531,
+      "J3": 4517,
+      "J4": 4313,
+      "J5": 4440,
+      "J6": 4583,
+      "J7": 4694,
+      "J8": 8496,
+      "K1": 3363,
+      "K2": 3793,
+      "K3": 3929,
+      "K4": 3791,
+      "K5": 3827,
+      "K6": 3989,
+      "K7": 3984,
+      "K8": 3744
+    },
+    "hypothetical_magenta_pixels": 0,
+    "front_corner_distance_rmse_median_px": 2.212053733333736,
+    "front_corner_distance_rmse_p95_px": 6.6079612906940985,
+    "carton_size_median_mm": [
+      143.1,
+      149.2,
+      140.9
+    ],
+    "observed_box_intersections_over_2mm": [],
+    "actual_total": "NOT IDENTIFIABLE FROM THIS IMAGE"
+  },
+  "assumptions": {
+    "palletMM": [
+      1200,
+      1000,
+      162
+    ],
+    "courses": 10,
+    "cameraHeightM": 1.6501365628967584
+  },
+  "hypotheses": {
+    "a": 172,
+    "b": 171,
+    "hidden": 93,
+    "removedId": "HYP_L01_D04_C06"
+  },
+  "boxes": [
+    {
+      "id": "A1",
+      "pixel": [
+        241,
+        334
+      ],
+      "sizeMM": [
+        170,
+        149,
+        167
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 1.6304156381852477,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A2",
+      "pixel": [
+        319,
+        335
+      ],
+      "sizeMM": [
+        168,
+        149,
+        163
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 1.4928021513887253,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A3",
+      "pixel": [
+        405,
+        345
+      ],
+      "sizeMM": [
+        149,
+        149,
+        150
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 1.2842976493077845,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A4",
+      "pixel": [
+        475,
+        349
+      ],
+      "sizeMM": [
+        145,
+        149,
+        146
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 1.0303345629987477,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A5",
+      "pixel": [
+        544,
+        353
+      ],
+      "sizeMM": [
+        142,
+        149,
+        130
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 4.347490697376321,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A6",
+      "pixel": [
+        612,
+        357
+      ],
+      "sizeMM": [
+        138,
+        149,
+        142
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 1.5999843806184866,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A7",
+      "pixel": [
+        682,
+        361
+      ],
+      "sizeMM": [
+        135,
+        149,
+        131
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 3.44553109158628,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "A8",
+      "pixel": [
+        752,
+        367
+      ],
+      "sizeMM": [
+        132,
+        149,
+        131
+      ],
+      "layerHypothesis": 10,
+      "fitRMSE": 2.8868154049544046,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "B1",
+      "pixel": [
+        240,
+        410
+      ],
+      "sizeMM": [
+        156,
+        149,
+        153
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 1.2515846984884345,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "B2",
+      "pixel": [
+        305,
+        414
+      ],
+      "sizeMM": [
+        152,
+        149,
+        155
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 1.735203665068159,
+      "note": "A separate carton partly concealed by the protruding labelled carton B3.",
+      "review": true
+    },
+    {
+      "id": "B3",
+      "pixel": [
+        383,
+        423
+      ],
+      "sizeMM": [
+        169,
+        81,
+        139
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 5.8260580527651475,
+      "note": "The front and right side are two surfaces of one carton.",
+      "review": true
+    },
+    {
+      "id": "B4",
+      "pixel": [
+        486,
+        425
+      ],
+      "sizeMM": [
+        176,
+        149,
+        143
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 3.5768156911252453,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "B5",
+      "pixel": [
+        572,
+        429
+      ],
+      "sizeMM": [
+        164,
+        149,
+        140
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 3.6253670193891967,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "B6",
+      "pixel": [
+        656,
+        437
+      ],
+      "sizeMM": [
+        162,
+        149,
+        141
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 3.3819078550819963,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "B7",
+      "pixel": [
+        746,
+        446
+      ],
+      "sizeMM": [
+        155,
+        149,
+        141
+      ],
+      "layerHypothesis": 9,
+      "fitRMSE": 3.2374626537459896,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C1",
+      "pixel": [
+        211,
+        492
+      ],
+      "sizeMM": [
+        149,
+        149,
+        142
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 5.144177061634937,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C2",
+      "pixel": [
+        286,
+        499
+      ],
+      "sizeMM": [
+        150,
+        149,
+        142
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 5.310342940052513,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C3",
+      "pixel": [
+        365,
+        504
+      ],
+      "sizeMM": [
+        143,
+        149,
+        143
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 5.104134833240719,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C4",
+      "pixel": [
+        461,
+        500
+      ],
+      "sizeMM": [
+        151,
+        149,
+        131
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 6.528722234022418,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C5",
+      "pixel": [
+        530,
+        505
+      ],
+      "sizeMM": [
+        144,
+        149,
+        131
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 6.57823988241056,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C6",
+      "pixel": [
+        603,
+        513
+      ],
+      "sizeMM": [
+        140,
+        149,
+        131
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 6.242564638573216,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C7",
+      "pixel": [
+        678,
+        517
+      ],
+      "sizeMM": [
+        134,
+        149,
+        133
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 5.384330332142545,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "C8",
+      "pixel": [
+        753,
+        522
+      ],
+      "sizeMM": [
+        136,
+        149,
+        135
+      ],
+      "layerHypothesis": 8,
+      "fitRMSE": 4.496875704415019,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "D1",
+      "pixel": [
+        207,
+        579
+      ],
+      "sizeMM": [
+        149,
+        149,
+        155
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 1.199813487471233,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "D2",
+      "pixel": [
+        282,
+        581
+      ],
+      "sizeMM": [
+        146,
+        149,
+        137
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 6.000471564363571,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "D3",
+      "pixel": [
+        365,
+        590
+      ],
+      "sizeMM": [
+        151,
+        149,
+        138
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 6.141043192540723,
+      "note": "The narrow label on its right side belongs to this carton. It is not another box.",
+      "review": true
+    },
+    {
+      "id": "D4",
+      "pixel": [
+        476,
+        576
+      ],
+      "sizeMM": [
+        176,
+        149,
+        134
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 8.745415745795352,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "D5",
+      "pixel": [
+        561,
+        580
+      ],
+      "sizeMM": [
+        168,
+        149,
+        135
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 8.172719057074046,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "D6",
+      "pixel": [
+        654,
+        590
+      ],
+      "sizeMM": [
+        165,
+        149,
+        133
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 7.700599397452126,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "D7",
+      "pixel": [
+        744,
+        595
+      ],
+      "sizeMM": [
+        162,
+        149,
+        152
+      ],
+      "layerHypothesis": 7,
+      "fitRMSE": 1.252606058162803,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E1",
+      "pixel": [
+        164,
+        705
+      ],
+      "sizeMM": [
+        181,
+        217,
+        152
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 3.2267753507653305,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E2",
+      "pixel": [
+        291,
+        676
+      ],
+      "sizeMM": [
+        183,
+        205,
+        147
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 4.033419614773606,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E3",
+      "pixel": [
+        392,
+        681
+      ],
+      "sizeMM": [
+        178,
+        151,
+        156
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 1.9442529843668157,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E4",
+      "pixel": [
+        462,
+        655
+      ],
+      "sizeMM": [
+        139,
+        149,
+        167
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 0.9597888352744048,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E5",
+      "pixel": [
+        516,
+        660
+      ],
+      "sizeMM": [
+        139,
+        149,
+        165
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 0.5806687390535797,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E6",
+      "pixel": [
+        595,
+        666
+      ],
+      "sizeMM": [
+        138,
+        149,
+        163
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 0.35905221282929556,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "E7",
+      "pixel": [
+        664,
+        654
+      ],
+      "sizeMM": [
+        134,
+        149,
+        132
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 1.9986073587232853,
+      "note": "Shadowed face: boundary interpretation was reviewed independently.",
+      "review": true
+    },
+    {
+      "id": "E8",
+      "pixel": [
+        731,
+        658
+      ],
+      "sizeMM": [
+        135,
+        149,
+        132
+      ],
+      "layerHypothesis": 6,
+      "fitRMSE": 2.0155291188470694,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F1",
+      "pixel": [
+        147,
+        816
+      ],
+      "sizeMM": [
+        181,
+        154,
+        146
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 2.695963780029215,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F2",
+      "pixel": [
+        261,
+        780
+      ],
+      "sizeMM": [
+        152,
+        169,
+        151
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 2.2443621342166993,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F3",
+      "pixel": [
+        347,
+        788
+      ],
+      "sizeMM": [
+        154,
+        159,
+        152
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 2.6592406619177082,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F4",
+      "pixel": [
+        434,
+        795
+      ],
+      "sizeMM": [
+        138,
+        149,
+        153
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 2.041460221469949,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F5",
+      "pixel": [
+        515,
+        757
+      ],
+      "sizeMM": [
+        149,
+        105,
+        137
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 3.9325555578289935,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F6",
+      "pixel": [
+        594,
+        761
+      ],
+      "sizeMM": [
+        147,
+        109,
+        133
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 3.9229653328831153,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F7",
+      "pixel": [
+        660,
+        728
+      ],
+      "sizeMM": [
+        135,
+        149,
+        133
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 3.8895392145784644,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "F8",
+      "pixel": [
+        734,
+        735
+      ],
+      "sizeMM": [
+        133,
+        149,
+        131
+      ],
+      "layerHypothesis": 5,
+      "fitRMSE": 4.897103579075806,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G1",
+      "pixel": [
+        157,
+        905
+      ],
+      "sizeMM": [
+        173,
+        132,
+        134
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 2.9247824389853383,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G2",
+      "pixel": [
+        263,
+        919
+      ],
+      "sizeMM": [
+        186,
+        136,
+        127
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 6.6239651259236965,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G3",
+      "pixel": [
+        383,
+        875
+      ],
+      "sizeMM": [
+        185,
+        134,
+        142
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 2.2251912562154157,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G4",
+      "pixel": [
+        483,
+        879
+      ],
+      "sizeMM": [
+        171,
+        130,
+        139
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 1.9430755856407282,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G5",
+      "pixel": [
+        585,
+        843
+      ],
+      "sizeMM": [
+        174,
+        116,
+        145
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 2.5340976086691884,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G6",
+      "pixel": [
+        665,
+        813
+      ],
+      "sizeMM": [
+        135,
+        114,
+        151
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 0.9653360891644237,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "G7",
+      "pixel": [
+        738,
+        818
+      ],
+      "sizeMM": [
+        135,
+        109,
+        154
+      ],
+      "layerHypothesis": 4,
+      "fitRMSE": 0.8236833981720998,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "H1",
+      "pixel": [
+        583,
+        898
+      ],
+      "sizeMM": [
+        168,
+        178,
+        148
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 0.9568585361648618,
+      "note": "Identified mainly from its exposed top. Its front is concealed.",
+      "review": true
+    },
+    {
+      "id": "H2",
+      "pixel": [
+        672,
+        901
+      ],
+      "sizeMM": [
+        140,
+        173,
+        144
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 1.1623778246704262,
+      "note": "Identified mainly from its exposed top. Its front is concealed.",
+      "review": true
+    },
+    {
+      "id": "H3",
+      "pixel": [
+        755,
+        956
+      ],
+      "sizeMM": [
+        144,
+        181,
+        148
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 0.381323579410757,
+      "note": "The stepped-back carton at the right. Counted here, not again in group I.",
+      "review": true
+    },
+    {
+      "id": "I1",
+      "pixel": [
+        169,
+        970
+      ],
+      "sizeMM": [
+        131,
+        149,
+        128
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 4.923608109491008,
+      "note": "The boundary with J1 is faint. Retained as a separate carton after review.",
+      "review": true
+    },
+    {
+      "id": "I2",
+      "pixel": [
+        247,
+        982
+      ],
+      "sizeMM": [
+        140,
+        149,
+        133
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 5.196228888383432,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "I3",
+      "pixel": [
+        327,
+        996
+      ],
+      "sizeMM": [
+        145,
+        153,
+        139
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 3.2938306603905128,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "I4",
+      "pixel": [
+        412,
+        1003
+      ],
+      "sizeMM": [
+        141,
+        151,
+        145
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 2.1797453324507727,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "I5",
+      "pixel": [
+        501,
+        1010
+      ],
+      "sizeMM": [
+        141,
+        147,
+        147
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 1.3796420962991154,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "I6",
+      "pixel": [
+        587,
+        1016
+      ],
+      "sizeMM": [
+        136,
+        144,
+        147
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 0.867373389310801,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "I7",
+      "pixel": [
+        675,
+        1024
+      ],
+      "sizeMM": [
+        139,
+        142,
+        149
+      ],
+      "layerHypothesis": 3,
+      "fitRMSE": 0.7981720123718796,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J1",
+      "pixel": [
+        173,
+        1032
+      ],
+      "sizeMM": [
+        130,
+        149,
+        151
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 2.3233959339144334,
+      "note": "The boundary above is faint; the lower seam is clearer. See the original pixels.",
+      "review": true
+    },
+    {
+      "id": "J2",
+      "pixel": [
+        246,
+        1050
+      ],
+      "sizeMM": [
+        137,
+        149,
+        149
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 1.6820333869664132,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J3",
+      "pixel": [
+        327,
+        1064
+      ],
+      "sizeMM": [
+        143,
+        149,
+        135
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 0.9980712657322381,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J4",
+      "pixel": [
+        412,
+        1073
+      ],
+      "sizeMM": [
+        142,
+        149,
+        136
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 0.8034987312501456,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J5",
+      "pixel": [
+        501,
+        1081
+      ],
+      "sizeMM": [
+        143,
+        149,
+        137
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 0.3489097728967439,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J6",
+      "pixel": [
+        583,
+        1090
+      ],
+      "sizeMM": [
+        139,
+        149,
+        139
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 0.4124114113617147,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J7",
+      "pixel": [
+        671,
+        1095
+      ],
+      "sizeMM": [
+        139,
+        149,
+        136
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 1.0396888452501825,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "J8",
+      "pixel": [
+        757,
+        1091
+      ],
+      "sizeMM": [
+        126,
+        166,
+        150
+      ],
+      "layerHypothesis": 2,
+      "fitRMSE": 1.3817795571384635,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K1",
+      "pixel": [
+        178,
+        1106
+      ],
+      "sizeMM": [
+        124,
+        149,
+        141
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 2.730667715735084,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K2",
+      "pixel": [
+        246,
+        1121
+      ],
+      "sizeMM": [
+        141,
+        149,
+        138
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 0.6317785791830962,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K3",
+      "pixel": [
+        329,
+        1124
+      ],
+      "sizeMM": [
+        144,
+        149,
+        134
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 0.7374418222982736,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K4",
+      "pixel": [
+        409,
+        1134
+      ],
+      "sizeMM": [
+        143,
+        149,
+        132
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 1.119115692144577,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K5",
+      "pixel": [
+        496,
+        1142
+      ],
+      "sizeMM": [
+        142,
+        149,
+        132
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 0.8120458555809575,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K6",
+      "pixel": [
+        581,
+        1150
+      ],
+      "sizeMM": [
+        142,
+        149,
+        132
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 1.43943885516523,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K7",
+      "pixel": [
+        672,
+        1160
+      ],
+      "sizeMM": [
+        135,
+        149,
+        132
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 0.7775615627679071,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    },
+    {
+      "id": "K8",
+      "pixel": [
+        750,
+        1164
+      ],
+      "sizeMM": [
+        128,
+        149,
+        131
+      ],
+      "layerHypothesis": 1,
+      "fitRMSE": 0.9965812597182357,
+      "note": "Distinct visible carton. Its unseen depth remains a modelling assumption.",
+      "review": false
+    }
+  ],
+  "scaleSweep": [
+    {
+      "hypothesis": "UK / 1200 mm frontage",
+      "pallet_m": [
+        1.2,
+        1,
+        0.162
+      ],
+      "weighted_coordinate_rmse_px": 2.7086518854716544,
+      "fitted_camera_height_m": 1.6501365628967584,
+      "assumed_ten_course_fitted_pitch_m": 0.14062719303586804,
+      "fitted_upper_front_depth_m": 0.8861059992825047,
+      "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+    },
+    {
+      "hypothesis": "UK / 1000 mm frontage",
+      "pallet_m": [
+        1,
+        1.2,
+        0.162
+      ],
+      "weighted_coordinate_rmse_px": 2.8605790161986855,
+      "fitted_camera_height_m": 1.398957875552563,
+      "assumed_ten_course_fitted_pitch_m": 0.11726616428856362,
+      "fitted_upper_front_depth_m": 0.7366109171039665,
+      "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+    },
+    {
+      "hypothesis": "Euro / 1200 mm frontage",
+      "pallet_m": [
+        1.2,
+        0.8,
+        0.144
+      ],
+      "weighted_coordinate_rmse_px": 2.700745487712865,
+      "fitted_camera_height_m": 1.6315698077475844,
+      "assumed_ten_course_fitted_pitch_m": 0.1406581857161811,
+      "fitted_upper_front_depth_m": 0.8857168316307641,
+      "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+    },
+    {
+      "hypothesis": "Euro / 800 mm frontage",
+      "pallet_m": [
+        0.8,
+        1.2,
+        0.144
+      ],
+      "weighted_coordinate_rmse_px": 3.007090394838789,
+      "fitted_camera_height_m": 1.131598956690832,
+      "assumed_ten_course_fitted_pitch_m": 0.093869408882837,
+      "fitted_upper_front_depth_m": 0.5880299008048435,
+      "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+    }
+  ],
+  "downloads": [
+    {
+      "file": "boxes_to_count.jpg",
+      "bytes": 149051,
+      "sha256": "3ac1e327fa1429fca0b54e816e84c33c9fcfe49284a9affd810c50243be733c1"
+    },
+    {
+      "file": "pallet_reconstruction.blend",
+      "bytes": 370140,
+      "sha256": "ef3e1c10ccd6fdca3886c126b2ad1df2c246581a484337eca7ae30a3498e3f0c"
+    },
+    {
+      "file": "pallet_reconstruction.glb",
+      "bytes": 1067520,
+      "sha256": "47a019bd0afe3d1f17a375605b5ccb2ce6fbe6830a8bd65c02203f02922c9eca"
+    },
+    {
+      "file": "observed_cartons.glb",
+      "bytes": 953072,
+      "sha256": "5c4e4f15ba4869a3079029629b765a80a72c727ac50e48720458e5a6e8b47e57"
+    },
+    {
+      "file": "visible_cartons_annotated.png",
+      "bytes": 1063172,
+      "sha256": "97bdb418f6aeebc6736d1aaaf24c21be8b62581f7d9ddaea0c99e6c3e8b7688c"
+    },
+    {
+      "file": "photo_surface_reconstruction.png",
+      "bytes": 949222,
+      "sha256": "0bc910d7edd081197c0ff913f0a9c86d12e5d671d727cca8b6c2920bb5f47f6a"
+    },
+    {
+      "file": "neutral_geometry.png",
+      "bytes": 1127070,
+      "sha256": "f5166285c428cb78b41c561b52c0898fc8fca55fa18cffd418642e6742aa791b"
+    },
+    {
+      "file": "overview.png",
+      "bytes": 1403602,
+      "sha256": "0ae6306b7196ca84a94da8a06e581aa059f346eecfc7a9917fef60c6c978beb0"
+    },
+    {
+      "file": "rear_uncertainty_audit.png",
+      "bytes": 1270747,
+      "sha256": "eab8ecad5fb493e763622b1aded0bb7c576b981af8aa78aab60e2f9bea8fa23f"
+    },
+    {
+      "file": "reconstruction_comparison.jpg",
+      "bytes": 328193,
+      "sha256": "d9ef2ec69470b63d8bed3b8a4844be38a8dc704847e46a1f6c9350964f004cb0"
+    },
+    {
+      "file": "geometry_overlay.png",
+      "bytes": 1042340,
+      "sha256": "5ea45cccaf641716f57379e5ab17eee13db943878cb4961fad7e420781e9e904"
+    },
+    {
+      "file": "visibility_hypothesis_a.png",
+      "bytes": 550025,
+      "sha256": "df26e934e9fae88bb621a84ba82a87760ceace35eab87a6afb0a1420259e7bd8"
+    },
+    {
+      "file": "visibility_hypothesis_b.png",
+      "bytes": 550025,
+      "sha256": "2140b187444da2a2144594be0bb8ecc2754366f72537ce4e2a5822b4d384906e"
+    },
+    {
+      "file": "audit.json",
+      "bytes": 2099,
+      "sha256": "8601f5f03f8439dd9d4f7690fa7abc7a7800fc4fb4be12db8bb8dfedbe1e6d97"
+    },
+    {
+      "file": "scale_hypothesis_sweep.json",
+      "bytes": 1743,
+      "sha256": "3cde4990a8828450dd4d491798c47c8493b67ef82d2002627432ac33fd6cc370"
+    },
+    {
+      "file": "saved_blend_verification.json",
+      "bytes": 218,
+      "sha256": "9742182f220b7234e0380acd74ca3b33219ca053d4cda73035833f47ea67a713"
+    },
+    {
+      "file": "reconstruction.json",
+      "bytes": 80687,
+      "sha256": "cc2b81d23891c60ecdeae9b1e18fc1acabd2b0878f33169c9bf29395fb84cc0f"
+    },
+    {
+      "file": "report.md",
+      "bytes": 4976,
+      "sha256": "3ee2b5ebd5e76eae887270f4c4a5685e20c55f079f6819f5cebf71e35b553043"
+    },
+    {
+      "file": "visible_inventory.json",
+      "bytes": 3766,
+      "sha256": "de5d6a10c8c2c8b8c9aa87c9c81422aad0295a96e7471344ca6362c31fdc80ae"
+    }
+  ]
+}

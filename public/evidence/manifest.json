@@ -1,0 +1,102 @@
+[
+  {
+    "file": "boxes_to_count.jpg",
+    "bytes": 149051,
+    "sha256": "3ac1e327fa1429fca0b54e816e84c33c9fcfe49284a9affd810c50243be733c1"
+  },
+  {
+    "file": "pallet_reconstruction.blend",
+    "bytes": 370140,
+    "sha256": "ef3e1c10ccd6fdca3886c126b2ad1df2c246581a484337eca7ae30a3498e3f0c"
+  },
+  {
+    "file": "pallet_reconstruction.glb",
+    "bytes": 1067520,
+    "sha256": "47a019bd0afe3d1f17a375605b5ccb2ce6fbe6830a8bd65c02203f02922c9eca"
+  },
+  {
+    "file": "observed_cartons.glb",
+    "bytes": 953072,
+    "sha256": "5c4e4f15ba4869a3079029629b765a80a72c727ac50e48720458e5a6e8b47e57"
+  },
+  {
+    "file": "visible_cartons_annotated.png",
+    "bytes": 1063172,
+    "sha256": "97bdb418f6aeebc6736d1aaaf24c21be8b62581f7d9ddaea0c99e6c3e8b7688c"
+  },
+  {
+    "file": "photo_surface_reconstruction.png",
+    "bytes": 949222,
+    "sha256": "0bc910d7edd081197c0ff913f0a9c86d12e5d671d727cca8b6c2920bb5f47f6a"
+  },
+  {
+    "file": "neutral_geometry.png",
+    "bytes": 1127070,
+    "sha256": "f5166285c428cb78b41c561b52c0898fc8fca55fa18cffd418642e6742aa791b"
+  },
+  {
+    "file": "overview.png",
+    "bytes": 1403602,
+    "sha256": "0ae6306b7196ca84a94da8a06e581aa059f346eecfc7a9917fef60c6c978beb0"
+  },
+  {
+    "file": "rear_uncertainty_audit.png",
+    "bytes": 1270747,
+    "sha256": "eab8ecad5fb493e763622b1aded0bb7c576b981af8aa78aab60e2f9bea8fa23f"
+  },
+  {
+    "file": "reconstruction_comparison.jpg",
+    "bytes": 328193,
+    "sha256": "d9ef2ec69470b63d8bed3b8a4844be38a8dc704847e46a1f6c9350964f004cb0"
+  },
+  {
+    "file": "geometry_overlay.png",
+    "bytes": 1042340,
+    "sha256": "5ea45cccaf641716f57379e5ab17eee13db943878cb4961fad7e420781e9e904"
+  },
+  {
+    "file": "visibility_hypothesis_a.png",
+    "bytes": 550025,
+    "sha256": "df26e934e9fae88bb621a84ba82a87760ceace35eab87a6afb0a1420259e7bd8"
+  },
+  {
+    "file": "visibility_hypothesis_b.png",
+    "bytes": 550025,
+    "sha256": "2140b187444da2a2144594be0bb8ecc2754366f72537ce4e2a5822b4d384906e"
+  },
+  {
+    "file": "audit.json",
+    "bytes": 2099,
+    "sha256": "8601f5f03f8439dd9d4f7690fa7abc7a7800fc4fb4be12db8bb8dfedbe1e6d97"
+  },
+  {
+    "file": "scale_hypothesis_sweep.json",
+    "bytes": 1743,
+    "sha256": "3cde4990a8828450dd4d491798c47c8493b67ef82d2002627432ac33fd6cc370"
+  },
+  {
+    "file": "saved_blend_verification.json",
+    "bytes": 218,
+    "sha256": "9742182f220b7234e0380acd74ca3b33219ca053d4cda73035833f47ea67a713"
+  },
+  {
+    "file": "reconstruction.json",
+    "bytes": 80687,
+    "sha256": "cc2b81d23891c60ecdeae9b1e18fc1acabd2b0878f33169c9bf29395fb84cc0f"
+  },
+  {
+    "file": "report.md",
+    "bytes": 4976,
+    "sha256": "3ee2b5ebd5e76eae887270f4c4a5685e20c55f079f6819f5cebf71e35b553043"
+  },
+  {
+    "file": "visible_inventory.json",
+    "bytes": 3766,
+    "sha256": "de5d6a10c8c2c8b8c9aa87c9c81422aad0295a96e7471344ca6362c31fdc80ae"
+  },
+  {
+    "file": "case-study.json",
+    "bytes": 37862,
+    "sha256": "991a597a59c98698ae5bcd2563128b69303d866397e89bc8a22904da5792558c"
+  }
+]

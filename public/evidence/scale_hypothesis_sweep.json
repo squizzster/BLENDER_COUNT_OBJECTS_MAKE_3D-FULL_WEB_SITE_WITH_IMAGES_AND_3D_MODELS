@@ -1,0 +1,54 @@
+[
+  {
+    "hypothesis": "UK / 1200 mm frontage",
+    "pallet_m": [
+      1.2,
+      1.0,
+      0.162
+    ],
+    "weighted_coordinate_rmse_px": 2.7086518854716544,
+    "fitted_camera_height_m": 1.6501365628967584,
+    "assumed_ten_course_fitted_pitch_m": 0.14062719303586804,
+    "fitted_upper_front_depth_m": 0.8861059992825047,
+    "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+  },
+  {
+    "hypothesis": "UK / 1000 mm frontage",
+    "pallet_m": [
+      1.0,
+      1.2,
+      0.162
+    ],
+    "weighted_coordinate_rmse_px": 2.8605790161986855,
+    "fitted_camera_height_m": 1.398957875552563,
+    "assumed_ten_course_fitted_pitch_m": 0.11726616428856362,
+    "fitted_upper_front_depth_m": 0.7366109171039665,
+    "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+  },
+  {
+    "hypothesis": "Euro / 1200 mm frontage",
+    "pallet_m": [
+      1.2,
+      0.8,
+      0.144
+    ],
+    "weighted_coordinate_rmse_px": 2.700745487712865,
+    "fitted_camera_height_m": 1.6315698077475844,
+    "assumed_ten_course_fitted_pitch_m": 0.1406581857161811,
+    "fitted_upper_front_depth_m": 0.8857168316307641,
+    "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+  },
+  {
+    "hypothesis": "Euro / 800 mm frontage",
+    "pallet_m": [
+      0.8,
+      1.2,
+      0.144
+    ],
+    "weighted_coordinate_rmse_px": 3.007090394838789,
+    "fitted_camera_height_m": 1.131598956690832,
+    "assumed_ten_course_fitted_pitch_m": 0.093869408882837,
+    "fitted_upper_front_depth_m": 0.5880299008048435,
+    "note": "Rear pallet edge is unobserved; this score cannot identify pallet type or rear occupancy."
+  }
+]
