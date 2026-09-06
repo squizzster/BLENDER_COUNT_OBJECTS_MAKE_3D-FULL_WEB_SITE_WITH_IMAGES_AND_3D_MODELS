@@ -1,6 +1,6 @@
 # ALPHA release validation
 
-Release: `0.2.0-alpha.1` · 2026-09-06 · Three.js r180 · Node 24
+Release: `0.2.0-alpha.2` · 2026-09-06 · Three.js r180 · Node 24
 
 **317 estimated boxes, approximately 320**, assuming one concealed carton is missing from a fully occupied 318-box model. The 79 observed instances anchor the reconstruction. Zero–three removals give 315–318 within the selected packing; the nominal-depth sensitivity sweep gives 276–336. Neither range is a statistical confidence interval or guaranteed bound on real inventory. This replaces the earlier 172/171 occlusion illustration.
 
@@ -27,11 +27,11 @@ Release: `0.2.0-alpha.1` · 2026-09-06 · Three.js r180 · Node 24
 | Responsive widths                         | 320, 390, 768, 1024 and 1440 CSS pixels                                                       |
 | Automated WCAG A/AA checks                | No detected violations, including expanded evidence panels                                    |
 
-The integrity verifier parses the real model files and PNG pixel arrays independently of the UI. Static mechanics and gravity records come from the research pipeline; website checks do not rerun those solvers. Geometry remains in fixed positions in the viewer. The grey-interior switch recolours inferred boxes, preserving support. Orange gap outlines are inspection markers, not cartons.
+The integrity verifier parses the real model files and PNG pixel arrays independently of the UI. Static mechanics and gravity records come from the research pipeline; website checks do not rerun those solvers. Geometry remains in fixed positions in the viewer. The **See-through interior** switch alternates faint transparent volumes with pale edges and solid cardboard. Observed cartons stay opaque. Transparent inferred meshes neither write opaque depth nor cast solid shadows, and pointer picking reaches the observed cartons behind them. Both materials are disposed on context loss. Counts, geometry and support remain unchanged. Orange gap outlines are inspection markers, not cartons.
 
 Playwright uses one Chromium worker with **Mesa llvmpipe CPU rendering**. `--enable-gpu` permits driver selection, while Vulkan/EGL discovery is explicitly restricted to Mesa and SwiftShader fallback is disabled. Tests inspect the WebGL renderer string. No SELinux, NVIDIA driver, kernel-module or reboot settings were changed.
 
-Manual visual inspection covers the supplied mini-head, desktop and portrait hero, the supported model, course arithmetic, and the rear-removal scenarios. The source photograph and all scientific PNGs remain downloadable. Narrow photo panels retain readable labels through horizontal inspection; labels can be disabled to fit the full photograph.
+Manual visual inspection covers the supplied mini-head, desktop and portrait hero, transparent and solid interior views from the front and rear, the supported model, course arithmetic, and the rear-removal scenarios. The source photograph and all scientific PNGs remain downloadable. Narrow photo panels retain readable labels through horizontal inspection; labels can be disabled to fit the full photograph.
 
 The shared Three.js/GLTFLoader chunk is approximately 144 kB gzipped, plus small viewer and logo modules. The supplied mini-head is reduced from 3.5 MB to approximately 0.82 MB. WebP rear previews reduce transfer size; the original PNGs remain unchanged. Both 3D views cap pixel ratio at 1.5 and pause offscreen. The logo renders on events, without a continuous idle loop. It keeps the poster when the browser requests data saving.
 

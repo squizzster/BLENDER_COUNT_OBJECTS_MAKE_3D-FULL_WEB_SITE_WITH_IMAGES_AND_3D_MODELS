@@ -185,8 +185,8 @@ function modelCaption() {
     byId("show-gaps").checked && missing
       ? "Orange outlines mark empty positions · remaining cartons stay supported"
       : byId("show-hidden").checked
-        ? "Grey cartons are hypothetical · all remaining boxes stay supported"
-        : "Neutral colour view · inferred cartons remain in their support positions";
+        ? "See-through = inferred · solid = observed · switch off to see the solid stack"
+        : "Solid stack view · switch on to see through the inferred interior";
 }
 
 function selectScenario(value) {
