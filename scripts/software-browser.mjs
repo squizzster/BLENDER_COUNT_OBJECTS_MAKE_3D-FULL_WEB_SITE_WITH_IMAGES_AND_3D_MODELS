@@ -15,6 +15,8 @@ export function softwareBrowserOptions() {
   return {
     args: [
       "--enable-gpu",
+      "--ignore-gpu-blocklist",
+      "--enable-webgl",
       "--use-gl=angle",
       "--use-angle=gl",
       "--disable-gpu-compositing",

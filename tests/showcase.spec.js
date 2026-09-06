@@ -2,11 +2,21 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 async function ready(page) {
+  const diagnostics = [];
+  page.on("console", (message) => {
+    if (["error", "warning"].includes(message.type()))
+      diagnostics.push(message.text());
+  });
   await page.goto("/");
-  await expect(page.locator("#model-stage")).toHaveAttribute(
-    "data-viewer-status",
-    "ready",
-  );
+  try {
+    await expect(page.locator("#model-stage")).toHaveAttribute(
+      "data-viewer-status",
+      "ready",
+    );
+  } catch (error) {
+    console.error(diagnostics.slice(-8).join("\n"));
+    throw error;
+  }
 }
 
 test("loads the actual GLB and links all 79 photograph instances to the model", async ({
