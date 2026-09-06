@@ -35,7 +35,7 @@ Playwright runs one browser worker using **Mesa llvmpipe on the CPU**, with Swif
 ## Structure
 
 - `src/main.js`: shared photograph/model selection and one scenario state for every control, count, rear image and support readout.
-- `src/viewer.js`: Three.js r180, GLTFLoader, OrbitControls, RoomEnvironment/PMREM and ACES Filmic rendering. Inferred boxes stay in fixed support positions; the interior switch changes their colour. Optional outlines identify absent positions.
+- `src/viewer.js`: Three.js r180, GLTFLoader, OrbitControls, RoomEnvironment/PMREM and ACES Filmic rendering. Inferred boxes stay in fixed support positions; the **See-through interior** switch shows inferred cartons as faint transparent volumes with pale edges, or as solid cardboard when switched off. Observed cartons stay opaque and can be selected through the transparent stock. Optional outlines identify absent positions.
 - `src/logo.js`: a separate, event-rendered mini-head with a transparent supplied-model poster fallback.
 - `src/style.css`: responsive brand styling, visible focus and reduced motion.
 - `public/evidence/`: explicitly published study assets and checksums. These generated artifacts are intentionally versioned as the website deliverable. WebP previews supplement unchanged scientific PNGs.

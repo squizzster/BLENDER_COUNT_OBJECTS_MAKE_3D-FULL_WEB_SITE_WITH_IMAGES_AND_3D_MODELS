@@ -82,9 +82,25 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   root.updateMatrixWorld(true);
   const observed = new Map();
   const hidden = [];
-  const hiddenMaterial = new THREE.MeshStandardMaterial({
-    color: 0x85827c,
+  // Low opacity keeps several rows of inferred cartons see-through when layered.
+  // They retain their geometry but do not write opaque depth or cast solid shadows.
+  const hiddenMaterial = new THREE.MeshBasicMaterial({
+    color: 0xd7dedf,
+    transparent: true,
+    opacity: 0.075,
+    depthWrite: false,
+    toneMapped: false,
+  });
+  const solidHiddenMaterial = new THREE.MeshStandardMaterial({
+    color: 0x997c59,
     roughness: 0.82,
+  });
+  const hiddenEdgeMaterial = new THREE.LineBasicMaterial({
+    color: 0xd7dedf,
+    transparent: true,
+    opacity: 0.18,
+    depthWrite: false,
+    toneMapped: false,
   });
   const edgeMaterial = new THREE.LineBasicMaterial({
     color: 0x191919,
@@ -116,6 +132,8 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   scene.environmentIntensity = 0.65;
   room.dispose();
   pmrem.dispose();
+  const hiddenMeshes = [];
+  const hiddenEdges = [];
   for (const node of [...observed.values(), ...hidden]) {
     const meshes = [];
     node.traverse((child) => {
@@ -125,10 +143,14 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
       if (!node.userData.image_id) mesh.material = hiddenMaterial;
       const edges = new THREE.LineSegments(
         new THREE.EdgesGeometry(mesh.geometry, 25),
-        edgeMaterial,
+        node.userData.image_id ? edgeMaterial : hiddenEdgeMaterial,
       );
       edges.raycast = () => {};
       mesh.add(edges);
+      if (!node.userData.image_id) {
+        hiddenMeshes.push(mesh);
+        hiddenEdges.push(edges);
+      }
     }
   }
   const selection = new THREE.Box3Helper(new THREE.Box3(), 0xff3a00);
@@ -185,7 +207,15 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
       throw new Error("Invalid packing scenario.");
     highlightInterior = highlight;
     missing = omitted;
-    hiddenMaterial.color.set(highlight ? 0x85827c : 0x997c59);
+    for (const mesh of hiddenMeshes) {
+      mesh.material = highlight ? hiddenMaterial : solidHiddenMaterial;
+      mesh.castShadow = !highlight;
+      mesh.receiveShadow = !highlight;
+    }
+    for (const edges of hiddenEdges) {
+      edges.material = highlight ? hiddenEdgeMaterial : edgeMaterial;
+      edges.renderOrder = highlight ? 1 : 0;
+    }
     const removed = new Set(study.hypotheses.scenarios[missing].removedIds);
     for (const node of hidden) node.visible = !removed.has(node.name);
     for (const [id, marker] of gapMarkers)
@@ -195,6 +225,7 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
     stage.dataset.hypotheticalVisible = String(count);
     stage.dataset.missing = String(missing);
     stage.dataset.highlightInterior = String(highlight);
+    stage.dataset.interiorView = highlight ? "see-through" : "solid";
     stage.dataset.supportedCartons = String(
       study.hypotheses.scenarios[missing].supported,
     );
@@ -261,7 +292,9 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
     );
     const candidates = [
       ...observed.values(),
-      ...hidden.filter((node) => node.visible),
+      // In the see-through view, the observed cartons behind the inferred stock
+      // remain selectable. Solid inferred cartons still occlude pointer picking.
+      ...(highlightInterior ? [] : hidden.filter((node) => node.visible)),
     ];
     const hit = raycaster.intersectObjects(candidates, true)[0];
     let node = hit?.object;
@@ -287,7 +320,12 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
     visibility.disconnect();
     document.removeEventListener("visibilitychange", requestRender);
     controls.dispose();
-    const materials = new Set();
+    const materials = new Set([
+      hiddenMaterial,
+      solidHiddenMaterial,
+      hiddenEdgeMaterial,
+      edgeMaterial,
+    ]);
     const geometries = new Set();
     scene.traverse((node) => {
       if (node.geometry) geometries.add(node.geometry);
