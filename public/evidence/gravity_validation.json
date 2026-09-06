@@ -1,0 +1,160 @@
+{
+  "engine": "Blender Bullet rigid bodies on CPU",
+  "blender_version": "5.2.1 LTS",
+  "assumptions": "Rigid boxes, centred equal masses, friction 0.6, anchored pallet deck; no carton crushing or transport acceleration",
+  "checks": [
+    {
+      "missing": 0,
+      "cartons": 318,
+      "seconds": 10,
+      "gravity_m_s2": 9.81,
+      "substeps_per_frame": 12,
+      "solver_iterations": 80,
+      "maximum_displacement_mm": 3.688583586446732,
+      "peak_displacement_all_frames_mm": 3.688583586446732,
+      "peak_tilt_all_frames_degrees": 0.0,
+      "maximum_motion_last_second_mm": 0.371292867081374,
+      "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+      "maximum_tilt_degrees": 0.0,
+      "worst_displacements_m": [
+        [
+          "HYP_L10_A1_R02",
+          0.003688583586446732
+        ],
+        [
+          "A1",
+          0.0034927409346479617
+        ],
+        [
+          "C1",
+          0.003129960786344204
+        ],
+        [
+          "HYP_L08_C1_R02",
+          0.003038145026922217
+        ],
+        [
+          "HYP_L08_C1_R03",
+          0.003032226652610332
+        ]
+      ],
+      "unsupported_control_drop_m": 355.67523193359375,
+      "passed": true
+    },
+    {
+      "missing": 1,
+      "cartons": 317,
+      "seconds": 10,
+      "gravity_m_s2": 9.81,
+      "substeps_per_frame": 12,
+      "solver_iterations": 80,
+      "maximum_displacement_mm": 3.4847034759539164,
+      "peak_displacement_all_frames_mm": 3.4847034759539164,
+      "peak_tilt_all_frames_degrees": 0.0,
+      "maximum_motion_last_second_mm": 0.34487797564283756,
+      "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+      "maximum_tilt_degrees": 0.0,
+      "worst_displacements_m": [
+        [
+          "A1",
+          0.0034847034759539165
+        ],
+        [
+          "C1",
+          0.003055137910490634
+        ],
+        [
+          "B1",
+          0.0029835526946890636
+        ],
+        [
+          "HYP_L09_B1_R02",
+          0.0029688896172159547
+        ],
+        [
+          "HYP_L08_C1_R02",
+          0.0029418075383488805
+        ]
+      ],
+      "unsupported_control_drop_m": 355.67523193359375,
+      "passed": true
+    },
+    {
+      "missing": 2,
+      "cartons": 316,
+      "seconds": 10,
+      "gravity_m_s2": 9.81,
+      "substeps_per_frame": 12,
+      "solver_iterations": 80,
+      "maximum_displacement_mm": 3.098973037085129,
+      "peak_displacement_all_frames_mm": 3.098973037085129,
+      "peak_tilt_all_frames_degrees": 0.0,
+      "maximum_motion_last_second_mm": 0.30707260749282494,
+      "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+      "maximum_tilt_degrees": 0.0,
+      "worst_displacements_m": [
+        [
+          "A1",
+          0.0030989730370851293
+        ],
+        [
+          "B1",
+          0.002767959246197202
+        ],
+        [
+          "HYP_L08_C1_R03",
+          0.0027626537710008464
+        ],
+        [
+          "C1",
+          0.002711912376044493
+        ],
+        [
+          "HYP_L08_C1_R02",
+          0.0026306210690720468
+        ]
+      ],
+      "unsupported_control_drop_m": 355.67523193359375,
+      "passed": true
+    },
+    {
+      "missing": 3,
+      "cartons": 315,
+      "seconds": 10,
+      "gravity_m_s2": 9.81,
+      "substeps_per_frame": 12,
+      "solver_iterations": 80,
+      "maximum_displacement_mm": 3.120396176839812,
+      "peak_displacement_all_frames_mm": 3.120396176839812,
+      "peak_tilt_all_frames_degrees": 0.0,
+      "maximum_motion_last_second_mm": 0.32152852038720614,
+      "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+      "maximum_tilt_degrees": 0.0,
+      "worst_displacements_m": [
+        [
+          "A1",
+          0.003120396176839812
+        ],
+        [
+          "A6",
+          0.0029684013066762255
+        ],
+        [
+          "HYP_L08_C1_R03",
+          0.0029517831805547933
+        ],
+        [
+          "A8",
+          0.0029312265234695423
+        ],
+        [
+          "C1",
+          0.00286652931425904
+        ]
+      ],
+      "unsupported_control_drop_m": 355.67523193359375,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

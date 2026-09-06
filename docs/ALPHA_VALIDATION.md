@@ -1,31 +1,40 @@
 # ALPHA release validation
 
-Release: `0.1.0-alpha.1` · 2026-09-06 · Three.js r180 · Node 24
+Release: `0.2.0-alpha.1` · 2026-09-06 · Three.js r180 · Node 24
 
-The release presents **79 manually audited visible carton instances**. The concealed total remains unresolved. Model counts of 172 and 171 are illustrative occlusion counterexamples, not actual stock counts or verified packings.
+**317 estimated boxes, approximately 320**, assuming one concealed carton is missing from a fully occupied 318-box model. The 79 observed instances anchor the reconstruction. Zero–three removals give 315–318 within the selected packing; the nominal-depth sensitivity sweep gives 276–336. Neither range is a statistical confidence interval or guaranteed bound on real inventory. This replaces the earlier 172/171 occlusion illustration.
 
-| Check                                         | Result                                                                               |
-| --------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Website asset SHA-256 and size verification   | 20 assets match the manifest                                                         |
-| Source photograph identity                    | Matches the research audit's SHA-256                                                 |
-| Visible inventory and unique exported IDs     | 79                                                                                   |
-| Independently parsed GLB carton nodes         | 79 observed-only; 172 with illustrative interior                                     |
-| Embedded GLB texture and geometry             | Self-contained exports                                                               |
-| Controlled render pair, decoded independently | 1,076,480 identical RGBA pixels                                                      |
-| Browser integration                           | 17 passed; duplicate mobile width sweep intentionally skipped                        |
-| Real 3D ray picking and linked selection      | Passed on desktop and mobile layouts                                                 |
-| Failed model loading and retry                | Static evidence retained; retry restores viewer                                      |
-| Deliberate WebGL context loss and retry       | Evidence retained; one working replacement canvas                                    |
-| Automated WCAG A/AA checks                    | No detected violations at tested widths                                              |
-| Responsive widths                             | 320, 390, 768, 1024, and 1440 pixels                                                 |
-| Clean dependency installation                 | Isolated `npm ci`, lint, formatting, build and browser workflow passed               |
-| Dependency audit                              | No reported vulnerabilities at release preparation                                   |
-| Independent read-only review                  | Evidence claims and model classification reviewed; shared selection issues corrected |
+| Check                                     | Result                                                                                        |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Published evidence SHA-256 and sizes      | 32 assets match the manifest                                                                  |
+| Photograph identity                       | Matches the original 841×1280 source hash                                                     |
+| Observed IDs                              | 79 distinct, represented in the GLB and diagnostic render                                     |
+| Independently parsed carton nodes         | 79 observed-only; 318 complete positions                                                      |
+| Cumulative supported scenarios            | 318 / 317 / 316 / 315                                                                         |
+| Model intersections / unsupported cartons | 0 / 0                                                                                         |
+| Coupled static force and moment balance   | All four scenarios pass                                                                       |
+| Independently varied carton masses        | 40 finite sensitivity checks pass                                                             |
+| Blender Bullet gravity                    | All four ten-second runs pass; peak movement below 5 mm, net final-second movement below 1 mm |
+| Gravity mechanism control                 | Unsupported body falls; negative static-support fixtures fail as expected                     |
+| Controlled camera visibility              | Four decoded renders agree at all 1,076,480 RGBA pixels                                       |
+| Saved Blender state                       | Reopened; geometry and original image hash verified; one-missing layer is the default         |
+| Browser integration                       | 22 passed, 2 deliberate project-specific skips                                                |
+| Real 3D picking and linked selection      | Passed in desktop and mobile layouts                                                          |
+| Scenario/reset consistency                | Both sets of controls, visible counts, support readouts and images agree                      |
+| Load failure and context loss             | Static evidence retained; retry restores one working canvas and current scenario              |
+| Supplied mini-head                        | Actual GLB renders; context loss restores the poster without affecting the study              |
+| Portrait scrolling                        | Touch swipe over inactive model scrolls the page; explicit interaction toggle works           |
+| Responsive widths                         | 320, 390, 768, 1024 and 1440 CSS pixels                                                       |
+| Automated WCAG A/AA checks                | No detected violations, including expanded evidence panels                                    |
 
-Playwright uses Chromium 153 with one worker and **Mesa llvmpipe CPU rendering**. Its launch uses `--enable-gpu` to permit normal driver selection, while Vulkan/EGL discovery is explicitly restricted to Mesa and SwiftShader fallback is disabled. Tests inspect the actual WebGL renderer string. The development host's NVIDIA card reported 1 MiB usage and 0% utilization after the final test run. No SELinux, kernel module, or reboot changes were made.
+The integrity verifier parses the real model files and PNG pixel arrays independently of the UI. Static mechanics and gravity records come from the research pipeline; website checks do not rerun those solvers. Geometry remains in fixed positions in the viewer. The grey-interior switch recolours inferred boxes, preserving support. Orange gap outlines are inspection markers, not cartons.
 
-Manual visual inspection covered desktop, tablet, mobile, the original photograph, neutral and textured reconstructions, and the hypothetical interior. Narrow photo panels preserve readable labels with horizontal inspection; labels can be disabled to fit the full photograph. The native source image and its annotation remain downloadable.
+Playwright uses one Chromium worker with **Mesa llvmpipe CPU rendering**. `--enable-gpu` permits driver selection, while Vulkan/EGL discovery is explicitly restricted to Mesa and SwiftShader fallback is disabled. Tests inspect the WebGL renderer string. No SELinux, NVIDIA driver, kernel-module or reboot settings were changed.
 
-The page and renderer load in separate JavaScript chunks; the Three.js viewer is approximately 151 kB gzipped. Native evidence images are retained, so scrolling through the full study transfers several megabytes. A static rendered preview and direct downloads remain available when interactive loading fails. The browser view caps pixel ratio at 1.5 and pauses rendering offscreen.
+Manual visual inspection covers the supplied mini-head, desktop and portrait hero, the supported model, course arithmetic, and the rear-removal scenarios. The source photograph and all scientific PNGs remain downloadable. Narrow photo panels retain readable labels through horizontal inspection; labels can be disabled to fit the full photograph.
 
-These checks establish consistency, usability, and recoverability of the website and its evidence. Automated accessibility checks do not replace a complete assistive-technology audit; mobile emulation does not certify every physical device. Geometric dimensions, rear occupancy, and stability remain conditional or unverified as recorded in the [research findings](../public/evidence/report.md).
+The shared Three.js/GLTFLoader chunk is approximately 144 kB gzipped, plus small viewer and logo modules. The supplied mini-head is reduced from 3.5 MB to approximately 0.82 MB. WebP rear previews reduce transfer size; the original PNGs remain unchanged. Both 3D views cap pixel ratio at 1.5 and pause offscreen. The logo renders on events, without a continuous idle loop. It keeps the poster when the browser requests data saving.
+
+Validation also includes an isolated dependency installation, lint/format checks, production build and primary browser workflow. The clean-install log is retained locally in an ignored project temporary directory. GitHub CI repeats the release checks on Ubuntu before merge; production assets are checked after Netlify deployment.
+
+These checks establish consistency, physical plausibility under the model assumptions, usability and recovery. They do not certify carton crushing strength, transport safety or the actual hidden stock. Browser mobile emulation does not replace physical-device testing, and automated accessibility checks do not replace an assistive-technology audit. See the [research findings](../public/evidence/report.md) for the residuals, assumptions and limitations.

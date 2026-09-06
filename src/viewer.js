@@ -64,6 +64,7 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   try {
     const response = await fetch("/evidence/pallet_reconstruction.glb", {
       signal: AbortSignal.timeout(20000),
+      cache: "no-cache",
     });
     if (!response.ok)
       throw new Error(`Model request failed (${response.status}).`);
@@ -81,15 +82,14 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   root.updateMatrixWorld(true);
   const observed = new Map();
   const hidden = [];
-  const moving = [];
   const hiddenMaterial = new THREE.MeshStandardMaterial({
-    color: 0x777777,
+    color: 0x85827c,
     roughness: 0.82,
   });
   const edgeMaterial = new THREE.LineBasicMaterial({
     color: 0x191919,
     transparent: true,
-    opacity: 0.25,
+    opacity: 0.4,
   });
   root.traverse((node) => {
     if (node.isMesh) {
@@ -117,10 +117,6 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   room.dispose();
   pmrem.dispose();
   for (const node of [...observed.values(), ...hidden]) {
-    const center = new THREE.Box3()
-      .setFromObject(node)
-      .getCenter(new THREE.Vector3());
-    moving.push({ node, origin: node.position.clone(), center });
     const meshes = [];
     node.traverse((child) => {
       if (child.isMesh) meshes.push(child);
@@ -134,21 +130,7 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
       edges.raycast = () => {};
       mesh.add(edges);
     }
-    if (!node.userData.image_id) node.visible = false;
   }
-  root.traverse((node) => {
-    if (node.name.startsWith("Tape_")) {
-      const box = observed.get(node.name.slice(5));
-      if (box)
-        moving.push({
-          node,
-          origin: node.position.clone(),
-          center: new THREE.Box3()
-            .setFromObject(box)
-            .getCenter(new THREE.Vector3()),
-        });
-    }
-  });
   const selection = new THREE.Box3Helper(new THREE.Box3(), 0xff3a00);
   selection.material.depthTest = false;
   selection.material.toneMapped = false;
@@ -156,9 +138,24 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   selection.visible = false;
   scene.add(selection);
   let selectedId;
-  let showHidden = false;
-  let removeHidden = false;
-  let separation = 0;
+  let highlightInterior = true;
+  let missing = 1;
+  let markGaps = false;
+  const gapMarkers = new Map();
+  for (const removal of study.hypotheses.removals) {
+    const node = hidden.find((item) => item.name === removal.id);
+    if (!node) throw new Error("A removable carton is absent from the model.");
+    const marker = new THREE.Box3Helper(
+      new THREE.Box3().setFromObject(node),
+      0xff3a00,
+    );
+    marker.material.depthTest = false;
+    marker.material.toneMapped = false;
+    marker.renderOrder = 9;
+    marker.visible = false;
+    scene.add(marker);
+    gapMarkers.set(node.name, marker);
+  }
   let active = true;
   let disposed = false;
   let frame = 0;
@@ -171,7 +168,7 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   };
   function select(id) {
     selectedId = observed.has(id) ? id : undefined;
-    selection.visible = Boolean(selectedId);
+    selection.visible = Boolean(selectedId) && !markGaps;
     if (selectedId) selection.box.setFromObject(observed.get(selectedId));
     stage.dataset.selectedCarton = selectedId || "";
     requestRender();
@@ -183,34 +180,31 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
     stage.dataset.cameraView = name;
     requestRender();
   }
-  function setHypotheses(show, remove) {
-    showHidden = show;
-    removeHidden = remove;
-    for (const node of hidden)
-      node.visible =
-        show && !(remove && node.name === study.hypotheses.removedId);
+  function setHypotheses(highlight, omitted) {
+    if (!Number.isInteger(omitted) || !study.hypotheses.scenarios[omitted])
+      throw new Error("Invalid packing scenario.");
+    highlightInterior = highlight;
+    missing = omitted;
+    hiddenMaterial.color.set(highlight ? 0x85827c : 0x997c59);
+    const removed = new Set(study.hypotheses.scenarios[missing].removedIds);
+    for (const node of hidden) node.visible = !removed.has(node.name);
+    for (const [id, marker] of gapMarkers)
+      marker.visible = markGaps && removed.has(id);
     const count = hidden.filter((node) => node.visible).length;
     stage.dataset.visibleCartons = String(observed.size + count);
     stage.dataset.hypotheticalVisible = String(count);
+    stage.dataset.missing = String(missing);
+    stage.dataset.highlightInterior = String(highlight);
+    stage.dataset.supportedCartons = String(
+      study.hypotheses.scenarios[missing].supported,
+    );
     requestRender();
   }
-  function separate(value) {
-    separation = value / 100;
-    for (const { node, origin, center } of moving) {
-      node.position
-        .copy(origin)
-        .add(
-          new THREE.Vector3(
-            center.x * 0.45,
-            center.y * 0.28,
-            (center.z + 0.42) * 0.45,
-          ).multiplyScalar(separation),
-        );
-    }
-    root.updateMatrixWorld(true);
-    if (selectedId) selection.box.setFromObject(observed.get(selectedId));
-    stage.dataset.separation = String(value);
-    requestRender();
+  function showGaps(enabled) {
+    markGaps = enabled;
+    selection.visible = Boolean(selectedId) && !enabled;
+    stage.dataset.markGaps = String(enabled);
+    setHypotheses(highlightInterior, missing);
   }
   function render(time) {
     frame = 0;
@@ -326,7 +320,7 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   );
   container.append(renderer.domElement);
   setView("overview");
-  setHypotheses(false, false);
+  setHypotheses(true, 1);
   stage.dataset.observedCartons = String(observed.size);
   stage.dataset.totalCartons = String(observed.size + hidden.length);
   stage.dataset.threeRevision = THREE.REVISION;
@@ -335,22 +329,26 @@ export async function createViewer({ container, study, onSelect, onFailure }) {
   return {
     select,
     setView,
-    separate,
+    showGaps,
     setHypotheses,
     dispose,
+    interact(enabled) {
+      controls.enabled = enabled;
+      renderer.domElement.tabIndex = enabled ? 0 : -1;
+    },
     rotate(enabled) {
       controls.autoRotate = enabled;
       requestRender();
     },
     reset() {
       controls.autoRotate = false;
-      separate(0);
-      setHypotheses(false, false);
+      showGaps(false);
+      setHypotheses(true, 1);
       setView("overview");
       select(selectedId);
     },
     get state() {
-      return { showHidden, removeHidden, separation };
+      return { highlightInterior, missing, markGaps };
     },
   };
 }

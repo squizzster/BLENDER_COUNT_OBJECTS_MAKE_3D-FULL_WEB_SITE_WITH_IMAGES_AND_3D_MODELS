@@ -1,0 +1,9 @@
+{
+  "source_archive": "tropical-crown-website-kit.zip",
+  "source_model_sha256": "3afdaee8a4ed694cbd28e5dcc5efca0e45360fbfd6b7c599644bb8de8c7cded1",
+  "source_bytes": 3500360,
+  "logo_bytes": 823280,
+  "logo_sha256": "b0e11f3740a40f284bb784fc97701e1c19f5805055ae535d527c9c7ddcae6f20",
+  "logo_triangles": 34789,
+  "method": "Supplied GLB; geometry simplified for header size, textures capped at 256 px; CPU Blender poster. No generated portrait replacement."
+}
