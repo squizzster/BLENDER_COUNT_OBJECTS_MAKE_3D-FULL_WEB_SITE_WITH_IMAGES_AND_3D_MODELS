@@ -1,106 +1,272 @@
 {
   "source_sha256": "3ac1e327fa1429fca0b54e816e84c33c9fcfe49284a9affd810c50243be733c1",
-  "visible_inventory": 79,
-  "glb_verified_carton_counts": {
-    "pallet_reconstruction.glb": 172,
-    "observed_cartons.glb": 79
-  },
-  "front_dominant": 77,
-  "top_dominant": 2,
-  "hypothesis_a_cartons": 172,
-  "hypothesis_b_cartons": 171,
-  "visibility_image_differing_pixels": 0,
-  "visibility_images_identical": true,
-  "observed_ids_without_exact_interior_color_pixels": [],
-  "observed_render_pixel_counts": {
-    "A1": 4799,
-    "A2": 5106,
-    "A3": 4298,
-    "A4": 3752,
-    "A5": 3644,
-    "A6": 3803,
-    "A7": 3874,
-    "A8": 4053,
-    "B1": 4738,
-    "B2": 3580,
-    "B3": 5392,
-    "B4": 5542,
-    "B5": 5367,
-    "B6": 5362,
-    "B7": 5608,
-    "C1": 5305,
-    "C2": 5366,
-    "C3": 5830,
-    "C4": 4420,
-    "C5": 4096,
-    "C6": 4119,
-    "C7": 4122,
-    "C8": 4533,
-    "D1": 5695,
-    "D2": 4908,
-    "D3": 5699,
-    "D4": 5544,
-    "D5": 5466,
-    "D6": 5483,
-    "D7": 6190,
-    "E1": 12320,
-    "E2": 7384,
-    "E3": 7722,
-    "E4": 3170,
-    "E5": 5220,
-    "E6": 5448,
-    "E7": 3929,
-    "E8": 3540,
-    "F1": 12709,
-    "F2": 7425,
-    "F3": 8348,
-    "F4": 7567,
-    "F5": 5496,
-    "F6": 5639,
-    "F7": 3724,
-    "F8": 4169,
-    "G1": 6672,
-    "G2": 10987,
-    "G3": 6455,
-    "G4": 7680,
-    "G5": 6335,
-    "G6": 4705,
-    "G7": 5386,
-    "H1": 4017,
-    "H2": 4314,
-    "H3": 7799,
-    "I1": 3528,
-    "I2": 3986,
-    "I3": 7260,
-    "I4": 8725,
-    "I5": 8836,
-    "I6": 8907,
-    "I7": 9332,
-    "J1": 4489,
-    "J2": 4531,
-    "J3": 4517,
-    "J4": 4313,
-    "J5": 4440,
-    "J6": 4583,
-    "J7": 4694,
-    "J8": 8496,
-    "K1": 3363,
-    "K2": 3793,
-    "K3": 3929,
-    "K4": 3791,
-    "K5": 3827,
-    "K6": 3989,
-    "K7": 3984,
-    "K8": 3744
-  },
-  "hypothetical_magenta_pixels": 0,
-  "front_corner_distance_rmse_median_px": 2.212053733333736,
-  "front_corner_distance_rmse_p95_px": 6.6079612906940985,
-  "carton_size_median_mm": [
-    143.1,
-    149.2,
-    140.9
+  "observed_count": 79,
+  "full_count": 318,
+  "estimated_count": 317,
+  "conditional_range": [
+    315,
+    318
   ],
-  "observed_box_intersections_over_2mm": [],
-  "actual_total": "NOT IDENTIFIABLE FROM THIS IMAGE"
+  "scenario_differing_rgba_pixels": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "pixels_per_image": 1076480,
+  "observed_render_pixel_counts": {
+    "K1": 3389,
+    "K2": 3970,
+    "K3": 3886,
+    "K4": 3893,
+    "K5": 4022,
+    "K6": 4050,
+    "K7": 4161,
+    "K8": 3928,
+    "J1": 3852,
+    "J2": 4236,
+    "J3": 4304,
+    "J4": 4451,
+    "J5": 4667,
+    "J6": 4748,
+    "J7": 4959,
+    "J8": 7837,
+    "I1": 3777,
+    "I2": 3706,
+    "I3": 7144,
+    "I4": 8847,
+    "I5": 9148,
+    "I6": 9684,
+    "H1": 2864,
+    "I7": 9675,
+    "H2": 3130,
+    "H3": 6743,
+    "G1": 6746,
+    "G2": 12353,
+    "G3": 6659,
+    "G4": 8290,
+    "G5": 5660,
+    "G6": 4486,
+    "G7": 4686,
+    "F1": 12746,
+    "F2": 6657,
+    "F3": 8061,
+    "F4": 7339,
+    "F5": 5898,
+    "F6": 6236,
+    "F7": 3447,
+    "F8": 4027,
+    "E1": 10636,
+    "E2": 6910,
+    "E3": 7329,
+    "E4": 2655,
+    "E5": 4292,
+    "E6": 4814,
+    "E7": 3770,
+    "E8": 3828,
+    "D1": 4885,
+    "D2": 5001,
+    "D3": 5778,
+    "D4": 5472,
+    "D5": 5589,
+    "D6": 5527,
+    "D7": 5471,
+    "C1": 5405,
+    "C2": 5576,
+    "C3": 5907,
+    "C4": 4664,
+    "C5": 4426,
+    "C6": 4335,
+    "C7": 4281,
+    "C8": 4440,
+    "B1": 4322,
+    "B2": 3116,
+    "B3": 6060,
+    "B4": 5230,
+    "B5": 5440,
+    "B6": 5305,
+    "B7": 5428,
+    "A1": 4765,
+    "A2": 5612,
+    "A3": 3865,
+    "A4": 3769,
+    "A5": 3820,
+    "A6": 3840,
+    "A7": 3923,
+    "A8": 4053
+  },
+  "assumed_fill_pixels_in_fitted_view": 11064,
+  "projection_note": "Selected removals are pixel-identical. Small visible fragments of assumed fill in the fitted view are reconstruction mismatch, not new observed boxes.",
+  "box_intersections": [],
+  "glb_carton_nodes": 318,
+  "observed_glb_carton_nodes": 79,
+  "image_fit": {
+    "front_median_px": 2.8736234777268397,
+    "front_p95_px": 5.803680411300186,
+    "top_median_px": 10.340777832993194,
+    "top_p95_px": 15.186830561084147,
+    "top_corner_note": "Approximate manual top corners include inferred boundaries; fit residuals are not independent measurement accuracy."
+  },
+  "gravity": {
+    "engine": "Blender Bullet rigid bodies on CPU",
+    "blender_version": "5.2.1 LTS",
+    "assumptions": "Rigid boxes, centred equal masses, friction 0.6, anchored pallet deck; no carton crushing or transport acceleration",
+    "checks": [
+      {
+        "missing": 0,
+        "cartons": 318,
+        "seconds": 10,
+        "gravity_m_s2": 9.81,
+        "substeps_per_frame": 12,
+        "solver_iterations": 80,
+        "maximum_displacement_mm": 3.688583586446732,
+        "peak_displacement_all_frames_mm": 3.688583586446732,
+        "peak_tilt_all_frames_degrees": 0.0,
+        "maximum_motion_last_second_mm": 0.371292867081374,
+        "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+        "maximum_tilt_degrees": 0.0,
+        "worst_displacements_m": [
+          [
+            "HYP_L10_A1_R02",
+            0.003688583586446732
+          ],
+          [
+            "A1",
+            0.0034927409346479617
+          ],
+          [
+            "C1",
+            0.003129960786344204
+          ],
+          [
+            "HYP_L08_C1_R02",
+            0.003038145026922217
+          ],
+          [
+            "HYP_L08_C1_R03",
+            0.003032226652610332
+          ]
+        ],
+        "unsupported_control_drop_m": 355.67523193359375,
+        "passed": true
+      },
+      {
+        "missing": 1,
+        "cartons": 317,
+        "seconds": 10,
+        "gravity_m_s2": 9.81,
+        "substeps_per_frame": 12,
+        "solver_iterations": 80,
+        "maximum_displacement_mm": 3.4847034759539164,
+        "peak_displacement_all_frames_mm": 3.4847034759539164,
+        "peak_tilt_all_frames_degrees": 0.0,
+        "maximum_motion_last_second_mm": 0.34487797564283756,
+        "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+        "maximum_tilt_degrees": 0.0,
+        "worst_displacements_m": [
+          [
+            "A1",
+            0.0034847034759539165
+          ],
+          [
+            "C1",
+            0.003055137910490634
+          ],
+          [
+            "B1",
+            0.0029835526946890636
+          ],
+          [
+            "HYP_L09_B1_R02",
+            0.0029688896172159547
+          ],
+          [
+            "HYP_L08_C1_R02",
+            0.0029418075383488805
+          ]
+        ],
+        "unsupported_control_drop_m": 355.67523193359375,
+        "passed": true
+      },
+      {
+        "missing": 2,
+        "cartons": 316,
+        "seconds": 10,
+        "gravity_m_s2": 9.81,
+        "substeps_per_frame": 12,
+        "solver_iterations": 80,
+        "maximum_displacement_mm": 3.098973037085129,
+        "peak_displacement_all_frames_mm": 3.098973037085129,
+        "peak_tilt_all_frames_degrees": 0.0,
+        "maximum_motion_last_second_mm": 0.30707260749282494,
+        "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+        "maximum_tilt_degrees": 0.0,
+        "worst_displacements_m": [
+          [
+            "A1",
+            0.0030989730370851293
+          ],
+          [
+            "B1",
+            0.002767959246197202
+          ],
+          [
+            "HYP_L08_C1_R03",
+            0.0027626537710008464
+          ],
+          [
+            "C1",
+            0.002711912376044493
+          ],
+          [
+            "HYP_L08_C1_R02",
+            0.0026306210690720468
+          ]
+        ],
+        "unsupported_control_drop_m": 355.67523193359375,
+        "passed": true
+      },
+      {
+        "missing": 3,
+        "cartons": 315,
+        "seconds": 10,
+        "gravity_m_s2": 9.81,
+        "substeps_per_frame": 12,
+        "solver_iterations": 80,
+        "maximum_displacement_mm": 3.120396176839812,
+        "peak_displacement_all_frames_mm": 3.120396176839812,
+        "peak_tilt_all_frames_degrees": 0.0,
+        "maximum_motion_last_second_mm": 0.32152852038720614,
+        "final_second_metric": "Maximum per-carton net displacement between frames 217 and 241",
+        "maximum_tilt_degrees": 0.0,
+        "worst_displacements_m": [
+          [
+            "A1",
+            0.003120396176839812
+          ],
+          [
+            "A6",
+            0.0029684013066762255
+          ],
+          [
+            "HYP_L08_C1_R03",
+            0.0029517831805547933
+          ],
+          [
+            "A8",
+            0.0029312265234695423
+          ],
+          [
+            "C1",
+            0.00286652931425904
+          ]
+        ],
+        "unsupported_control_drop_m": 355.67523193359375,
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  },
+  "all_static_scenarios_passed": true,
+  "mass_checks_passed": 40
 }
