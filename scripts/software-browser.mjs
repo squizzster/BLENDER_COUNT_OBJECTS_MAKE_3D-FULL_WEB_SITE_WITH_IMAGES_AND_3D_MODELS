@@ -3,9 +3,12 @@ import { existsSync } from "node:fs";
 // Test processes must never select a physical GPU. Restrict driver discovery,
 // not just the WebGL preference; desktop composition also needs a CPU backend.
 export function softwareBrowserOptions() {
-  const mesaICD = "/usr/share/vulkan/icd.d/lvp_icd.x86_64.json";
+  const mesaICD = [
+    "/usr/share/vulkan/icd.d/lvp_icd.x86_64.json",
+    "/usr/share/vulkan/icd.d/lvp_icd.json",
+  ].find(existsSync);
   const mesaEGL = "/usr/share/glvnd/egl_vendor.d/50_mesa.json";
-  if (!existsSync(mesaICD) || !existsSync(mesaEGL))
+  if (!mesaICD || !existsSync(mesaEGL))
     throw new Error(
       "Mesa CPU rendering is required. Install mesa-vulkan-drivers and libegl-mesa0 (Ubuntu), or the corresponding Mesa packages on your Linux distribution. SwiftShader is intentionally excluded.",
     );
